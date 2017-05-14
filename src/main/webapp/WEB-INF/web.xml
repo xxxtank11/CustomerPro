@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="urms-webapp" version="2.5" metadata-complete="true">
+  <display-name>CustomerPro</display-name>
+  <servlet>
+    <servlet-name>SetLocationServlet</servlet-name>
+    <servlet-class>servlet.ServletDemo_SetLocation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetLocationServlet</servlet-name>
+    <url-pattern>/ServletDemo_SetLocation</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DrawImageServlet</servlet-name>
+    <servlet-class>servlet.ServletDemo_DrawImage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DrawImageServlet</servlet-name>
+    <url-pattern>/DrawImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CheckCodeServlet</servlet-name>
+    <servlet-class>servlet.ServletDemo_CheckCode</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckCodeServlet</servlet-name>
+    <url-pattern>/CheckCodeServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
